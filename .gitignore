@@ -1,0 +1,8 @@
+# Build folder
+build/
+
+# Mac files
+
+.DS_Store
+.ds_store
+config.codekit3
