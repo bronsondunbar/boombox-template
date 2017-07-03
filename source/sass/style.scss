@@ -1,0 +1,44 @@
+
+@import 'bootstrap';
+@import 'font.awesome';
+@import 'font.awesome.animation';
+
+@import 'variables';
+@import 'accordion';
+@import 'buttons';
+@import 'carousel';
+@import 'navbar';
+
+body {
+
+  padding-top: 39px;
+  overflow-x: hidden;
+
+}
+
+section {
+
+	background: $gray;
+	padding: 30px 0;
+	color: $white;
+
+}
+
+.brand {
+
+	position: absolute;
+	margin: 0 auto;
+	width: 4%;
+	left: 47%;
+
+	@media screen and (max-width: $tabletPortrait) {
+		width: 6%;
+	}
+
+}
+
+.img-responsive {
+
+	margin: 15px 0;
+
+}

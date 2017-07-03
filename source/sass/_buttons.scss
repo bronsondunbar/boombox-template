@@ -1,0 +1,41 @@
+/* Buttons */
+
+.btn {
+
+	border-radius: 0;
+	margin: 5px;
+
+}
+
+.btn-default {
+
+	background: $blue;
+	color: $white;
+	border: 1px solid $blue;
+	transition: $fastTransition;
+
+	&:hover, &:focus {
+
+		background: $white;
+		color: $blue;
+		border: 1px solid $blue;
+		box-shadow: $lightBlueShadow;
+
+	}
+}
+
+.btn-primary {
+
+	background: $gray;
+	color: $white;
+	border: 1px solid $gray;
+
+	&:hover, &:focus {
+
+		background: $white;
+		color: $gray;
+		border: 1px solid $gray;
+
+	}
+
+}

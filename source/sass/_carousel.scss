@@ -1,0 +1,92 @@
+/* Carousel */
+
+.carousel-control {
+
+	width: 2%;
+
+	.glyphicon-chevron-left, .glyphicon-menu-left, .icon-prev, .glyphicon-chevron-right, .glyphicon-menu-right, .carousel-control .icon-next {
+
+		position: absolute;
+    	top: 50%;
+    	z-index: 5;
+    	display: inline-block;
+    	margin-top: -10px;
+
+    	@media screen and (min-width: $tabletPortrait) {
+
+			width: 30px;
+	    	height: 30px;
+	    	margin-top: -10px;
+	    	font-size: 30px;
+
+		}
+
+	}
+
+	.glyphicon-chevron-left, .glyphicon-menu-left, .icon-prev {
+
+		left: 50%;
+    	margin-left: -10px;
+
+    	@media screen and (min-width: $tabletPortrait) {
+
+			margin-left: -10px;
+
+		}
+
+	}
+
+	.glyphicon-chevron-right, .glyphicon-menu-right, .carousel-control .icon-next {
+
+		right: 50%;
+    	margin-right: -10px;
+
+    	@media screen and (min-width: $tabletPortrait) {
+
+			margin-right: -10px;
+
+		}
+
+	}
+
+}
+
+.carousel-control.left {
+
+	background: none;
+
+}
+
+.carousel-control.right {
+
+	background: none;
+
+}
+
+.carousel-indicators {
+
+	li {
+
+		margin: 1px 5px 1px 1px;
+
+		&:last-child {
+
+			margin: 1px 0 1px 1px;
+
+		}
+
+	}
+
+	.active {
+
+		margin: 1px 5px 1px 1px;
+
+		&:last-child {
+
+			margin: 0;
+
+		}
+
+	}
+
+}
