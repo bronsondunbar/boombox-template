@@ -95,142 +95,340 @@
 
 .navbar-content {
 
-	background: $blue;
-	position: fixed;
-	width: 0;
-	height: 100%;
-	left: 0;
-	top: 0;
-	overflow-x: hidden;
-	z-index: 1050;
-	padding: 0;
-	transition: $fastTransition;
-	color: $white;
-  	box-shadow: inset $blackShadow;
+  background: $gray;
+  position: fixed;
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  z-index: 1050;
+  padding: 0;
+  transition: $fastTransition;
+  color: $white;
+  box-shadow: inset $blackShadow;
 
-  	div {
+    div {
 
-  		img {
+      h1 {
 
-  			display: block;
-			margin: 30px auto;
-			width: 50%;
+        text-align: center;
+        color: $white;
 
-  		}
+      }
 
-  		div {
+      img {
 
-  			div {
+        display: block;
+        margin: 30px auto;
+        width: 50%;
 
-  				ul {
+      }
 
-  					display: block;
-					list-style-type: none;
-					margin: 0 -5px 0 -15px;
-					padding: 5px 0;
-				  	box-shadow: inset $blackShadow;
+      div {
 
-				  	.active {
+        div {
 
-				  		background: $gray;
-						color: $white;
+          position: relative;
 
-				  	}
+          /* Base level */
 
-				  	li {
+          ul {
 
-				  		border-bottom: 1px solid $white;
+            position: absolute;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            list-style-type: none;
+            margin: 0 -15px 0 -5px;
+            padding: 0;
+            box-shadow: inset $blackShadow;
 
-				  		a {
+            .active {
 
-				  			display: block;
-							padding: 15px 15px 15px 30px;
-							color: $white;
-							transition: $fastTransition;
-							text-decoration: none;
+              background: $blue;
+              color: $white;
 
-							&:hover, &:focus {
+            }
 
-								background: $gray;
-								color: $white;
+            /* Level 1 */
 
-							}
+            ul {
 
-				  		}
+                position: absolute;
+                z-index: 9998;
+                display: block;
+                top: 0;
+                left: 400px;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background: $white;
+                border-right: 1px solid $lightGray;
+                box-shadow: inset $blackShadow;
 
-				  		ul {
+                /* Level 2 */
 
-				  			list-style-type: none;
-							margin: 0;
-							padding: 0;
-							background: #ffffff;
-							border-right: 1px solid $lightGray;
-						  	box-shadow: inset $blackShadow;
+                ul {
 
-						  	li {
+                  position: absolute;
+                  z-index: 9997;
+                  top: 0;
+                  left: 400px;
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                  background: $blue;
+                  border-right: 1px solid $lightGray;
+                  box-shadow: inset $blackShadow;
 
-						  		border-bottom: 1px solid $lightGray;
+                  /* Level 3 */
 
-						  		a {
+                  ul {
 
-						  			display: block;
-									padding: 15px 15px 15px 60px;
-									color: $blue;
-									transition: $fastTransition;
-									text-decoration: none;
+                    position: absolute;
+                    z-index: 9996;
+                    top: 0;
+                    left: 400px;
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    background: $lightGray;
+                    border-right: 1px solid $white;
+                    box-shadow: inset $blackShadow;
 
-									&:hover, &:focus {
+                    li {
 
-										background: none;
-										color: $gray;
+                      border-bottom: 1px solid $white;
 
-									}
+                      a {
 
-						  		}
+                        display: block;
+                        padding: 15px 15px 15px 40px;
+                        color: $gray;
+                        transition: $fastTransition;
+                        text-decoration: none;
 
-						  		&:last-child {
+                        &:hover, &:focus {
 
-						  			border: none;
+                          background: none;
+                          color: $blue;
 
-						  		}
+                        }
 
-						  	}
+                      }
 
-				  		}
+                      &:last-child {
 
-				  		&:last-child {
+                        border: none;
 
-				  			border: none;
+                      }
 
-				  		}
+                    }
 
-				  	}
+                  }
 
-  				}
+                  li {
 
-  			}
+                    border-bottom: 1px solid $lightGray;
 
-  		}
+                    a {
 
-  		.navbar-content-close-btn {
+                      display: block;
+                      padding: 15px 15px 15px 40px;
+                      color: $white;
+                      transition: $fastTransition;
+                      text-decoration: none;
 
-  			position: absolute;
-  			top: 0;
-  			right: 25px;
-  			font-size: 36px;
-  			margin-left: 50px;
-  			color: $white;
-  			z-index: 5;
+                      &:hover, &:focus {
 
-  			&:hover, &:focus {
+                        background: none;
+                        color: $gray;
 
-  				color: $white;
-  				text-decoration: none;
+                      }
 
-  			}
+                    }
 
-  		}
+                    &:last-child {
 
-  	}
+                      border: none;
+
+                    }
+
+                  }
+
+                }
+
+                li {
+
+                  border-bottom: 1px solid $lightGray;
+
+                  a {
+
+                    display: block;
+                    padding: 15px 15px 15px 40px;
+                    color: $blue;
+                    transition: $fastTransition;
+                    text-decoration: none;
+
+                    &:hover, &:focus {
+
+                      background: none;
+                      color: $gray;
+
+                    }
+
+                  }
+
+                  &:last-child {
+
+                    border: none;
+
+                  }
+
+                }
+
+            }
+
+            li {
+
+              border-bottom: 1px solid $white;
+
+              a {
+
+                display: block;
+                padding: 15px 15px 15px 40px;
+                color: $white;
+                transition: $fastTransition;
+                text-decoration: none;
+
+                .fa:nth-of-type(1) {
+
+                  padding: 0 10px 0 0;
+
+                }
+
+                .fa-chevron-right {
+
+                  margin: 3px 30px 0 0;
+                  float: right;
+
+                }
+
+                &:hover, &:focus {
+
+                  background: $gray;
+                  color: $blue;
+
+                }
+
+              }
+
+              &:last-child {
+
+                border: none;
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+      .search {
+
+        width: 100%;
+        padding: 0 19px;
+
+        a {
+
+          position: absolute;
+          top: -1px;
+          right: 20px;
+          color: $white;
+          font-size: 1.5em;
+
+          &:hover, &:focus {
+
+            text-decoration: none;
+
+          }
+
+        }
+
+        .fa-search {
+
+          position: absolute;
+          top: 5px;
+          left: 20px;
+          color: $white;
+          font-size: 1.5em;
+
+        }
+
+      }
+
+      .breadcrumbs {
+
+      	display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 5px 0 15px;
+        text-align: center;
+
+        li {
+
+          display: inline;
+          border: none;
+
+          &:after {
+
+            content: ":";
+            padding: 0 5px 0 5px;
+
+          }
+
+          &:last-child:after {
+
+            content: none;
+            padding: 0;
+
+          }
+
+        }
+
+      }
+
+      .navbar-content-close-btn {
+
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        color: $white;
+        z-index: 5;
+
+        &:hover, &:focus {
+
+          color: $white;
+          text-decoration: none;
+
+        }
+
+      }
+
+    }
+
+}
+
+.navbar-title {
+
+  text-transform: capitalize;
+  margin: 40px 0 20px 0;
 
 }
