@@ -54,6 +54,7 @@
 		margin: 0;
 		border: none;
 		color: $white;
+    float: left;
 
 		&:hover, &:focus {
 
@@ -68,6 +69,12 @@
 			display: block;
 
 		}
+
+    @media screen and (min-width: $mobileLarge) {
+
+      margin: 0 0 0 15px;
+
+    }
 
 	}
 
@@ -374,11 +381,14 @@
 
       .breadcrumbs {
 
-      	display: block;
+      	position: absolute;
+        left: 0;
+        bottom: 0;
         list-style-type: none;
         margin: 0;
         padding: 5px 0 15px;
         text-align: center;
+        width: 100%;
 
         li {
 

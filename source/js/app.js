@@ -146,14 +146,12 @@ $(document).ready(function () {
 
   $("a").attr("data-ajax", "false");
 
-  $("#carousel-mobile").swiperight(function() {
+  $("#carousel").swiperight(function() {
     $(this).carousel("prev");
-    $(".fa-hand-o-up").css("display", "none");
   });
 
-  $("#carousel-mobile").swipeleft(function() {
+  $("#carousel").swipeleft(function() {
     $(this).carousel("next");
-    $(".fa-hand-o-up").css("display", "none");
   });
 
 });
@@ -179,3 +177,37 @@ $(document).scroll(function(){
     }); 
 
 });
+
+$("#item-one").on("click", function (event) {
+  event.preventDefault();
+
+  console.log("Hello");
+
+  $(".item-details")
+    .velocity({ left: 0 }, { queue: false }, 500)
+    .velocity({ top: 0 }, { queue: false }, 500)
+    .velocity({ opacity: 1 }, { queue: false }, 500)  
+    .velocity({ width: "100%" }, { queue: false }, 500)
+    .velocity({ height: "100vh" }, { queue: false }, 500);
+
+    var x = $(this).next("img").attr('src');
+
+
+  $(".item-details-media").html("<img src='" + x + "' class='img-responsive' />");
+
+
+  $("body").css("overflow-y", "hidden");
+});
+
+$(".item-details-close-btn").click(function (event) {
+  event.preventDefault();
+  $(".item-details")
+    .velocity({ left: "104vh" }, { queue: false }, 500)
+    .velocity({ top: "42vh" }, { queue: false }, 500)
+    .velocity({ opacity: 0 }, { queue: false }, 500)  
+    .velocity({ width: "1px" }, { queue: false }, 500)
+    .velocity({ height: "1px" }, { queue: false }, 500);
+
+
+  $("body").css("overflow-y", "visible");
+})

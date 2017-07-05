@@ -1,5 +1,39 @@
 /* Carousel */
 
+.carousel {
+
+	.carousel-inner {
+
+		.item {
+
+			text-align: center;
+
+			div {
+
+				img {
+
+					display: block;
+					margin: 0 auto;
+					width: 70%;
+
+				}
+
+				.btn {
+
+					position: absolute;
+    				bottom: 25%;
+    				left: 46.5%;
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
 .carousel-control {
 
 	width: 2%;
@@ -64,6 +98,8 @@
 }
 
 .carousel-indicators {
+
+	bottom: 20%;
 
 	li {
 

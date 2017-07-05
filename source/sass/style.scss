@@ -11,7 +11,7 @@
 
 body {
 
-  padding-top: 39px;
+  // padding-top: 38px;
   overflow-x: hidden;
 
 }
@@ -22,17 +22,48 @@ section {
 	margin: 15px 0;
 	color: $white;
 
+	&:last-child {
+
+		margin: 15px 0 0 0;
+
+	}
+
+}
+
+blockquote {
+
+	font-size: 2em;
+	text-align: center;
+	color: $blue;
+	border-left: none;
+
 }
 
 .brand {
 
 	position: absolute;
 	margin: 0 auto;
-	width: 4%;
+	width: 2.5%;
 	left: 47%;
+
+	@media screen and (max-width: $laptop) {
+		width: 3%;
+		left: 48%;
+	}
+
+	@media screen and (max-width: $tabletLandscape) {
+		width: 5%;
+		left: 46%;
+	}
 
 	@media screen and (max-width: $tabletPortrait) {
 		width: 6%;
+		left: 46%;
+	}
+
+	@media screen and (max-width: $mobileLarge) {
+		width: 11%;
+		left: 44%;
 	}
 
 }
@@ -76,6 +107,21 @@ section {
 
 		}
 
+		@media screen and (max-width: $tabletLandscape) {
+			top: 30%;
+		}
+
+		@media screen and (max-width: $tabletPortrait) {
+			top: 60%;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+		}
+
+		@media screen and (max-width: $mobileLarge) {
+			position: relative;
+		}
+
 	}
 
 	.showcase-media {
@@ -89,6 +135,12 @@ section {
 
 			margin: 0;
 
+		}
+
+		@media screen and (max-width: $tabletPortrait) {
+			width: 100%;
+			right: 0;
+			border-left: none;
 		}
 
 	}
@@ -116,6 +168,22 @@ section {
 
 		}
 
+		@media screen and (max-width: $tabletLandscape) {
+			top: 30%;
+		}
+
+		@media screen and (max-width: $tabletPortrait) {
+			top: 60%;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+		}
+
+		@media screen and (max-width: $mobileLarge) {
+			position: relative;
+			top: 0;
+		}
+
 	}
 
 	.showcase-media {
@@ -130,6 +198,67 @@ section {
 			margin: 0;
 
 		}
+
+		@media screen and (max-width: $tabletPortrait) {
+			width: 100%;
+			right: 0;
+			border-right: none;
+		}
+
+	}
+
+}
+
+.item-details {
+
+	position: absolute;
+	z-index: 9999;
+	height: 100vh;
+	left: 104vh;
+    top: 42vh;
+	background: $blue;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+
+	div {
+
+		div {
+
+			.img-responsive {
+
+				margin: 0;
+
+			}
+
+		}
+
+		.item-details-content {
+
+			padding: 0 15px 0 0;
+
+		}
+
+	}
+
+	.item-details-close-btn {
+
+		position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        color: $white;
+        z-index: 5;
+        transition: $fastTransition;
+
+        &:hover, &:focus {
+
+        	color: $gray;
+        	text-decoration: none;
+
+        }
 
 	}
 
