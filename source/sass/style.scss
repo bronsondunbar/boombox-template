@@ -237,6 +237,7 @@ blockquote {
 		.item-details-content {
 
 			padding: 0 15px 0 0;
+			color: $white;
 
 		}
 
@@ -261,5 +262,11 @@ blockquote {
         }
 
 	}
+
+}
+
+.content {
+
+	display: none;
 
 }

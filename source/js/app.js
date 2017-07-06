@@ -178,29 +178,48 @@ $(document).scroll(function(){
 
 });
 
-$("#item-one").on("click", function (event) {
+/* Carousel lightbox */
+
+$(".item-detail").on("click", function (event) {
   event.preventDefault();
 
-  console.log("Hello");
-
-  $(".item-details")
-    .velocity({ left: 0 }, { queue: false }, 500)
-    .velocity({ top: 0 }, { queue: false }, 500)
-    .velocity({ opacity: 1 }, { queue: false }, 500)  
-    .velocity({ width: "100%" }, { queue: false }, 500)
-    .velocity({ height: "100vh" }, { queue: false }, 500);
-
-    var x = $(this).next("img").attr('src');
-
-
-  $(".item-details-media").html("<img src='" + x + "' class='img-responsive' />");
-
-
   $("body").css("overflow-y", "hidden");
+
+  var scrollPosition = $(window).scrollTop();
+
+  if (scrollPosition == 0) {
+    $(".item-details")
+      .velocity({ left: 0 }, { queue: false }, 500)
+      .velocity({ top: 0 }, { queue: false }, 500)
+      .velocity({ opacity: 1 }, { queue: false }, 500)  
+      .velocity({ width: "100%" }, { queue: false }, 500)
+      .velocity({ height: "100vh" }, { queue: false }, 500);
+  } else {
+    $(".item-details")
+      .velocity({ left: 0 }, { queue: false }, 500)
+      .velocity({ top: scrollPosition }, { queue: false }, 500)
+      .velocity({ opacity: 1 }, { queue: false }, 500)  
+      .velocity({ width: "100%" }, { queue: false }, 500)
+      .velocity({ height: "100vh" }, { queue: false }, 500);
+  };
+
+  var itemMedia = $(this).attr('data-source');
+
+  if (itemMedia == undefined) {
+    var itemMedia = $(this).next("img").attr('src');
+  };
+
+  var itemContent = $(this).closest(".item").find(".content").html();
+
+  $(".item-details-media").html("<img src='" + itemMedia + "' class='img-responsive' />");
+  $(".item-details-content").html(itemContent);
+
+  
 });
 
 $(".item-details-close-btn").click(function (event) {
   event.preventDefault();
+
   $(".item-details")
     .velocity({ left: "104vh" }, { queue: false }, 500)
     .velocity({ top: "42vh" }, { queue: false }, 500)
@@ -210,4 +229,4 @@ $(".item-details-close-btn").click(function (event) {
 
 
   $("body").css("overflow-y", "visible");
-})
+});
