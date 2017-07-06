@@ -30,7 +30,7 @@
 
 				&:hover, &:focus {
 
-					color: $blue;
+					color: $green;
 
 				}
 
@@ -59,7 +59,7 @@
 		&:hover, &:focus {
 
 			background: none;
-			color: $blue;
+			color: $green;
 			transition: $fastTransition;
 
 		}
@@ -154,7 +154,7 @@
 
             .active {
 
-              background: $blue;
+              background: $green;
               color: $white;
 
             }
@@ -186,7 +186,7 @@
                   list-style-type: none;
                   margin: 0;
                   padding: 0;
-                  background: $blue;
+                  background: $green;
                   border-right: 1px solid $lightGray;
                   box-shadow: inset $blackShadow;
 
@@ -220,7 +220,7 @@
                         &:hover, &:focus {
 
                           background: none;
-                          color: $blue;
+                          color: $green;
 
                         }
 
@@ -275,7 +275,7 @@
 
                     display: block;
                     padding: 15px 15px 15px 40px;
-                    color: $blue;
+                    color: $green;
                     transition: $fastTransition;
                     text-decoration: none;
 
@@ -326,7 +326,7 @@
                 &:hover, &:focus {
 
                   background: $gray;
-                  color: $blue;
+                  color: $green;
 
                 }
 
