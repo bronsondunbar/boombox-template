@@ -2,8 +2,8 @@
 
 .carousel {
 
-	border-bottom: 1px solid $lightGray;
-	padding: 0 0 15px 0;
+	height: 100vh;
+	overflow: hidden;
 
 	.carousel-inner {
 
@@ -11,19 +11,11 @@
 
 			text-align: center;
 
-			img {
-
-				display: block;
-				margin: 0 auto;
-				width: 60%;
-
-			}
-
 			.btn {
 
 				position: absolute;
-				bottom: 10%;
-				left: 45%;
+				top: 65%;
+				left: 48.5%;
 
 			}
 
@@ -44,8 +36,6 @@
     	z-index: 5;
     	display: inline-block;
     	margin-top: -10px;
-    	color: $gray;
-    	text-shadow: none;
 
     	@media screen and (min-width: $tabletPortrait) {
 
