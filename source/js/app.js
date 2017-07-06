@@ -170,6 +170,12 @@ $(document).scroll(function(){
             if (!$(this).hasClass('in-viewport')) {
               $(this).velocity('transition.slideUpIn', { stagger: 700 }).delay(2000);
               $(this).addClass('in-viewport');
+
+              if ($(this).hasClass("showcase-left")) {
+                $(this).find('.showcase-media').velocity({right: "-30%"}, { stagger: 700 }, { queue: false }, 5000);
+              } else if ($(this).hasClass("showcase-right")) {
+                $(this).find('.showcase-media').velocity({left: "0%"}, { stagger: 700 }, { queue: false }, 5000);
+              }
             }
 
         }
@@ -186,6 +192,9 @@ $(".item-detail").on("click", function (event) {
   $("body").css("overflow-y", "hidden");
 
   var scrollPosition = $(window).scrollTop();
+  var getColor = $(this).parent(".item").css("background-color");
+
+  $(".item-details").css("background-color", getColor);
 
   if (scrollPosition == 0) {
     $(".item-details")
