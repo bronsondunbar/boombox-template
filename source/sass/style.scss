@@ -71,6 +71,12 @@ label {
 
 section {
 
+	margin: 15px 0;
+
+}
+
+section[role="highlight"] {
+
 	background: $gray;
 	margin: 15px 0;
 	color: $white;
@@ -78,6 +84,35 @@ section {
 	&:last-child {
 
 		margin: 15px 0 0 0;
+
+	}
+
+}
+
+section[role="article"] {
+
+	background: url("../assets/imgs/image-5-16x9.png") top center $white;
+	color: $gray;
+	padding: 20% 0 0 0;
+	margin: 0;
+
+	.container {
+
+		background: $white;
+
+		.row {
+
+			div {
+
+				h1, h2, h3, h4 {
+
+					text-align: center;
+
+				}
+
+			}
+
+		}
 
 	}
 
@@ -119,7 +154,7 @@ form {
 	text-align: center;
 	color: $white;
 	padding: 30px 0 15px 0;
-	margin: 30px 0 0 0;
+	margin: 0 0 0 0;
 
 	.container {
 
