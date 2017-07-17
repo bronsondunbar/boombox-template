@@ -117,22 +117,67 @@ section[role="highlight"] {
 
 section[role="article"] {
 
-	background: url("../assets/imgs/image-5-16x9.png") top center $white;
+	position: relative;
+	display: block;
+	height: auto;
 	color: $gray;
 	padding: 20% 0 0 0;
 	margin: 0;
 
-	.container {
+	.article-media {
 
-		background: $white;
+		background: url("../assets/imgs/image-5-16x9.png") top center;
+		height: 80vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		border-bottom: 5px solid $green;
 
-		.row {
+	}
 
-			div {
+	.article-content {
 
-				h1, h2, h3, h4 {
+		position: relative;
+		top: 80%;
+		left: 0;
+		display: block;
+		margin: 0 auto;
+		z-index: 1028;
 
-					text-align: center;
+		.container {
+
+			background: $white;
+
+			.row {
+
+				div {
+
+					h1, h2, h3, h4 {
+
+						text-align: center;
+
+					}
+
+					figure {
+
+						width: 40%;
+
+						img {
+
+							width: 100%;						
+
+						}
+
+						figcaption {
+
+							text-align: center;
+							font-weight: bold;
+							margin: 15px 0;
+
+						}
+
+					}
 
 				}
 
@@ -146,9 +191,13 @@ section[role="article"] {
 
 blockquote {
 
+	background: url("../assets/svg/image-4.svg") center no-repeat;
 	position: relative;
-	font-size: 3.5em;
+	font-size: 3em;
 	float: right;
+	width: 50%;
+	padding: 0 15px 0 15px;
+	margin: 0 0 0 15px;
 	line-height: 1.3em;
 	text-align: center;
 	color: $green;
@@ -158,7 +207,7 @@ blockquote {
 
 		font-size: 1.5em;
 		position: absolute;
-		left: 5%;
+		left: 1%;
 		content: open-quote;
 
 	}
@@ -167,9 +216,14 @@ blockquote {
 
 		font-size: 1.5em;
 		position: absolute;
-		right: 5%;
+		right: 1%;
 		content: close-quote;
 
+	}
+
+	@media screen and (max-width: $mobileLarge) {
+		display: block;
+		width: 100%;
 	}
 
 }
@@ -197,6 +251,7 @@ form {
 
 .footer {
 
+	position: static;
 	background: $gray;
 	text-align: center;
 	color: $white;
@@ -253,7 +308,7 @@ form {
 	position: absolute;
 	margin: 0 auto;
 	width: 2.5%;
-	left: 47%;
+	left: 49%;
 
 	@media screen and (max-width: $laptop) {
 		width: 3%;
@@ -475,5 +530,17 @@ form {
 .content {
 
 	display: none;
+
+}
+
+.pull-right {
+
+	margin: 0 0 0 15px;
+
+}
+
+.pull-left {
+
+	margin: 0 15px 0 0;
 
 }
