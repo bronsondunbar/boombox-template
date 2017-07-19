@@ -10,6 +10,7 @@
 @import 'navbar';
 @import 'typography';
 @import 'helper';
+@import 'categories';
 
 body {
 
@@ -104,13 +105,15 @@ section {
 
 section[role="highlight"] {
 
-	background: $lightGray;
 	margin: 15px 0;
+	padding: 15px 0;
 	color: $white;
 
-	&:last-child {
+	h1 {
 
-		margin: 15px 0 0 0;
+		text-align: center;
+		color: $gray;
+		margin: 15px 0 30px;
 
 	}
 
