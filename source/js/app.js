@@ -241,9 +241,11 @@ $(".item-details-close-btn").click(function (event) {
   $("body").css("overflow-y", "visible");
 });
 
+/* SVG animation using AnimeJS */
+
 $(document).ready(function () {
   var lineDrawing = anime({
-    targets: '#testOne .testTwo',
+    targets: '#categories .wrapper',
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: 'easeInOutSine',
     duration: 1000*60,
