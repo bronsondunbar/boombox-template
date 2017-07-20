@@ -4,6 +4,7 @@
 // @codekit-prepend 'lib/bootstrap.js'
 // @codekit-prepend 'lib/velocity.js'
 // @codekit-prepend 'lib/velocity.ui.js'
+// @codekit-prepend 'lib/anime.min.js'
 
 /* Navbar actions */
 
@@ -239,3 +240,16 @@ $(".item-details-close-btn").click(function (event) {
 
   $("body").css("overflow-y", "visible");
 });
+
+$(document).ready(function () {
+  var lineDrawing = anime({
+    targets: '#testOne .testTwo',
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: 'easeInOutSine',
+    duration: 1000*60,
+    // delay: function(el, i) { return i * 250 },
+    direction: 'alternate',
+    loop: true
+  });
+})
+

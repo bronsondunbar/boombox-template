@@ -1,9 +1,22 @@
 /* Categories */
 
 .category-one {
+
+	position: relative;
 	
-	background-image: url("../assets/svg/wrapper.svg");
-	background-position: center;
-	background-size: cover;
+	svg {
+
+		position: absolute;
+		z-index: -1;
+		height: 100%; 
+		width: 100%; 
+		left: 0; 
+		top: 0;
+
+		@media screen and (max-width: $mobileLarge) {
+			display: none;
+		}
+
+	}
 
 }
