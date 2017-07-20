@@ -5,6 +5,21 @@
 // @codekit-prepend 'lib/velocity.js'
 // @codekit-prepend 'lib/velocity.ui.js'
 // @codekit-prepend 'lib/anime.min.js'
+// @codekit-prepend 'lib/jquery.waypoints.js'
+
+/* Navbar background scroll color animation */
+
+$(document).ready(function () {
+
+  $(".waypoint").waypoint(function() {
+
+      $(".scroll-helper").hide();
+
+  }, {
+      offset: "1"
+  });
+
+});
 
 /* Navbar actions */
 
