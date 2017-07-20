@@ -181,6 +181,39 @@ $(document).scroll(function(){
 
         }
         
+    });
+
+    $('#categories > svg > g > path').each( function(i){
+        
+        var bottom_of_object = $(this).offset().top + 300;
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        
+        if (bottom_of_window > bottom_of_object) {
+
+            if (!$(this).hasClass('wrapper')) {
+              $(this).addClass('wrapper');
+
+              /* SVG animation using AnimeJS */
+
+              var lineDrawing = anime.timeline({
+                loop: true
+              });
+
+              lineDrawing.speed = .5;
+
+              lineDrawing
+                .add({
+                  targets: '#categories .wrapper',
+                  strokeDashoffset: [anime.setDashoffset, 0],
+                  easing: 'easeInOutSine',
+                  duration: 1000*60,
+                  direction: 'alternate',
+                  offset: 0
+                })
+            }
+
+        }
+        
     }); 
 
 });
@@ -240,18 +273,3 @@ $(".item-details-close-btn").click(function (event) {
 
   $("body").css("overflow-y", "visible");
 });
-
-/* SVG animation using AnimeJS */
-
-$(document).ready(function () {
-  var lineDrawing = anime({
-    targets: '#categories .wrapper',
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'easeInOutSine',
-    duration: 1000*60,
-    delay: function(el, i) { return i * 150 },
-    direction: 'alternate',
-    loop: true
-  });
-})
-
