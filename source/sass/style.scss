@@ -11,6 +11,7 @@
 @import 'typography';
 @import 'helper';
 @import 'categories';
+@import 'articles';
 
 body {
 
@@ -114,80 +115,6 @@ section[role="highlight"] {
 		text-align: center;
 		color: $gray;
 		margin: 15px 0 30px;
-
-	}
-
-}
-
-section[role="article"] {
-
-	position: relative;
-	display: block;
-	height: auto;
-	color: $gray;
-	padding: 20% 0 0 0;
-	margin: 0;
-
-	.article-media {
-
-		background: url("../assets/imgs/image-5-16x9.png") top center;
-		height: 80vh;
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		border-bottom: 5px solid $green;
-
-	}
-
-	.article-content {
-
-		position: relative;
-		top: 80%;
-		left: 0;
-		display: block;
-		margin: 0 auto;
-		z-index: 1028;
-
-		.container {
-
-			background: $white;
-
-			.row {
-
-				div {
-
-					h1, h2, h3, h4 {
-
-						text-align: center;
-
-					}
-
-					figure {
-
-						width: 40%;
-
-						img {
-
-							width: 100%;						
-
-						}
-
-						figcaption {
-
-							text-align: center;
-							font-weight: bold;
-							margin: 15px 0;
-
-						}
-
-					}
-
-				}
-
-			}
-
-		}
 
 	}
 

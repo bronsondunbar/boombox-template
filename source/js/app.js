@@ -192,6 +192,7 @@ $(document).scroll(function(){
 
             if (!$(this).hasClass('wrapper')) {
               $(this).addClass('wrapper');
+              $(this).css("display", "block");
 
               /* SVG animation using AnimeJS */
 
