@@ -456,6 +456,34 @@ form {
 
 	}
 
+	@media (max-width: $laptop) {
+
+		left: 77vh;
+		top: 62vh;
+
+	}
+
+	@media (max-width: $tabletLandscape) {
+
+		left: 55vh;
+		top: 65vh;
+
+	}
+
+	@media (max-width: $tabletPortrait) {
+
+		left: 41vh;
+		top: 66vh;
+
+	}
+
+	@media (max-width: $mobileLarge) {
+
+		left: 22vh;
+		top: 74vh;
+
+	}
+
 }
 
 .content {
@@ -473,5 +501,15 @@ form {
 .pull-left {
 
 	margin: 0 15px 0 0;
+
+}
+
+#categories {
+
+	@media screen and (max-width: $mobileLarge) {
+
+		display: none;
+
+	}
 
 }
