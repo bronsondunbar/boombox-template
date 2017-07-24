@@ -19,9 +19,15 @@
 				margin: 0 auto;
 				width: 50%;
 
-				@media screen and (max-width: $laptop) {
+				@media screen and (max-width: $tabletLandscape) {
 
 					width: 65%;
+
+				}
+
+				@media screen and (max-width: $tabletPortrait) {
+
+					width: 96%;
 
 				}
 
@@ -35,7 +41,21 @@
 
 				@media screen and (max-width: $laptop) {
 
+					top: 80%;
 					left: 48%;
+
+				}
+
+				@media screen and (max-width: $tabletLandscape) {
+
+					top: 78%;
+					left: 47%;
+
+				}
+
+				@media screen and (max-width: $tabletPortrait) {
+
+					left: 46%;
 
 				}
 
@@ -153,6 +173,12 @@
 			margin: 0;
 
 		}
+
+	}
+
+	@media screen and (max-width: $laptop) {
+
+		bottom: 7%;
 
 	}
 
