@@ -176,7 +176,11 @@ $(document).ready(function () {
 
 $(document).scroll(function(){
 
-    $('.showcase').each( function(i){
+    var screenResolution = $(window).width();
+
+    if (screenResolution > 768) {
+
+      $('.showcase').each( function(i){
         
         var bottom_of_object = $(this).offset().top + 300;
         var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -195,8 +199,10 @@ $(document).scroll(function(){
             }
 
         }
-        
-    });
+          
+      });
+
+    }
 
     $('#categories > svg > g > path').each( function(i){
         
@@ -288,26 +294,5 @@ $(".item-details-close-btn").click(function (event) {
 
 
   $("body").css("overflow-y", "visible");
-});
-
-
-/* Adapt SVG viewbox according to desktop size */
-
-$(document).ready(function () {
-
-  var screenResolution = $(window).width();
-
-  switch (screenResolution) {
-
-    case 1440:
-
-      $("#categories > svg").removeAttr("viewBox");
-      $("#categories > svg").attr("viewBox", "0 0 1000 1000");
-
-      $("#categories > svg").attr("width", "1440");
-      break;
-
-  }
-
 });
 
