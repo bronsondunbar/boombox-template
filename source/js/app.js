@@ -204,7 +204,7 @@ $(document).scroll(function(){
 
     }
 
-    $('#categories > svg > g > path').each( function(i){
+    $('#categories > g > path').each( function(i){
         
         var bottom_of_object = $(this).offset().top + 300;
         var bottom_of_window = $(window).scrollTop() + $(window).height();
