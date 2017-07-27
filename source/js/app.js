@@ -217,35 +217,15 @@ $(document).scroll(function(){
 
               /* SVG animation using AnimeJS */
 
-              var lineDrawing = anime.timeline({
-                loop: true
-              });
-
-              lineDrawing.speed = .5;
-
-              lineDrawing
-                .add({
+                var lineDrawing = anime({
                   targets: '#categories .wrapper path',
-                  strokeDashoffset: {
-                    value: [0, anime.setDashoffset],
-                    duration: 6000,
-                    delay: function(el, i, t) { return 2500 + ( i * 100 ); },
-                    easing: 'easeInQuart'
-                  },
-                  opacity: { value: 1, duration: 10, easing: 'linear' },
-                  offset: 0
-                })
-                .add({
-                  targets: '#categories .wrapper path',
-                  strokeDashoffset: {
-                    value: [anime.setDashoffset, 0],
-                    delay: function(el, i, t) { return 2000 + ( i * 100 ); },
-                    duration: 6000,
-                    easing: 'easeOutQuart'
-                  },
-                  opacity: { value: 0, duration: 10, easing: 'linear' },
-                  offset: 0
-                })
+                  strokeDashoffset: [anime.setDashoffset, 0],
+                  easing: 'easeInOutSine',
+                  duration: 6000,
+                  delay: function(el, i) { return i * 250 },
+                  direction: 'alternate',
+                  loop: true
+                });
             }
 
         }
