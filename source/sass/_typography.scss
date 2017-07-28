@@ -1,7 +1,8 @@
 /* Typography */
 
 h1, h2, h3, h4 {
-	font-weight: normal;
+	font-family: $titleFontFamily;
+	font-weight: $titleFontWeight;
 }
 
 h1 {
@@ -79,6 +80,22 @@ h4 {
 		color: $green;
 		display: block;
 		clear: both;
+
+	}
+
+}
+
+body {
+
+	font-family: $bodyFontFamily;
+
+}
+
+figure {
+
+	figcaption {
+
+		font-weight: 500;
 
 	}
 
