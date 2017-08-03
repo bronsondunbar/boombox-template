@@ -13,6 +13,9 @@
 @import 'articles';
 @import 'lightbox';
 @import 'categories';
+@import 'sections';
+@import 'showcase';
+@import 'grid';
 
 body {
 
@@ -78,52 +81,6 @@ label {
 	margin: 15px 0;
 	font-weight: normal;
 	text-align: center;
-
-}
-
-section {
-
-	margin: 15px 0;
-
-	.container {
-
-		.row {
-
-			div {
-
-				h1, h2, h3, h4 {
-
-					text-align: center;
-
-				}
-
-			}
-
-		}
-
-	}
-
-}
-
-section[role="highlight"] {
-
-	margin: 15px 0;
-	padding: 15px 0 0 0;
-	color: $white;
-	overflow: hidden;
-
-	&:before {
-
-
-	}
-
-	h1 {
-
-		text-align: center;
-		color: $gray;
-		margin: 15px 0 30px;
-
-	}
 
 }
 
@@ -275,146 +232,6 @@ form {
 .img-responsive {
 
 	margin: 15px 0;
-
-}
-
-.showcase {
-
-	opacity: 0;
-
-	@media screen and (max-width: $tabletPortrait) {
-
-		opacity: 1;
-
-	}
-
-}
-
-.showcase-left {
-
-	position: relative;
-
-	.showcase-caption {
-
-		background: $green;
-		position: absolute;
-		width: 50%;
-		top: 50%;
-		left: 5%;
-		z-index: 1029;
-		padding: 15px;
-		color: $white;
-
-		h2 {
-
-			margin: 0 auto auto;
-
-		}
-
-		@media screen and (max-width: $tabletLandscape) {
-
-			top: 15%;
-
-		}
-
-		@media screen and (max-width: $tabletPortrait) {
-
-			position: static;
-			top: 0;
-			display: block;
-			clear: both;
-			width: 100%;
-
-		}
-
-	}
-
-	.showcase-media {
-
-		position: relative;
-		right: -100%;
-		width: 50%;
-
-		.img-responsive {
-
-			margin: 0;
-
-		}
-
-		@media screen and (max-width: $tabletPortrait) {
-
-			position: static;
-			top: 0;
-			display: block;
-			clear: both;
-			width: 100%;
-
-		}
-
-	}
-
-}
-
-.showcase-right {
-
-	position: relative;
-
-	.showcase-caption {
-
-		background: $green;
-		position: absolute;
-		width: 50%;
-		top: 50%;
-		right: 5%;
-		z-index: 1029;
-		padding: 15px;
-		color: $white;
-
-		h2 {
-
-			margin: 0 auto auto;
-
-		}
-
-		@media screen and (max-width: $tabletLandscape) {
-			top: 15%;
-		}
-
-		@media screen and (max-width: $tabletPortrait) {
-
-			position: static;
-			top: 0;
-			display: block;
-			clear: both;
-			width: 100%;
-
-		}
-
-	}
-
-	.showcase-media {
-
-		position: relative;
-		left: -100%;
-		width: 50%;
-
-		.img-responsive {
-
-			margin: 0;
-
-		}
-
-		@media screen and (max-width: $tabletPortrait) {
-
-			position: static;
-			top: 0;
-			display: block;
-			clear: both;
-			width: 100%;
-
-		}
-
-	}
 
 }
 

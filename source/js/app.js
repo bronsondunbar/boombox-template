@@ -289,3 +289,17 @@ $(".item-details-close-btn").click(function (event) {
 
   $("body").css("overflow-y", "visible");
 });
+
+/* Add FontAwesome animation classes to icons on hover */
+
+$(document).ready(function () {
+
+  $(".caption").mouseenter(function () {
+    $(this).find(".fa").addClass("faa-burst animated");
+  });
+
+  $(".caption").mouseleave(function () {
+    $(this).find(".fa").removeClass("faa-burst animated");
+  });
+
+})
