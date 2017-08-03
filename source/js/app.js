@@ -304,7 +304,6 @@ $(document).ready(function () {
 
 })
 
-
 $(document).ready(function () {
   $('a[data-toggle="tooltip"]').tooltip("show");
 })
