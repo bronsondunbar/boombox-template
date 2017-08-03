@@ -289,4 +289,3 @@ $(".item-details-close-btn").click(function (event) {
 
   $("body").css("overflow-y", "visible");
 });
-
