@@ -286,7 +286,6 @@ $(".item-details-close-btn").click(function (event) {
     .velocity({ width: "1px" }, { queue: false }, 500)
     .velocity({ height: "1px" }, { queue: false }, 500);
 
-
   $("body").css("overflow-y", "visible");
 });
 

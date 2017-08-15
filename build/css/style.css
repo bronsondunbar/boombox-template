@@ -9425,6 +9425,9 @@ button.close {
   border-radius: 0;
   margin: 5px; }
 
+.btn-center {
+  text-align: center; }
+
 .btn-default {
   background: #3ba30d;
   color: #ffffff;
@@ -9478,12 +9481,18 @@ button.close {
       @media screen and (max-width: 768px) {
         .carousel .carousel-inner .item .btn {
           left: 46%; } }
+      @media screen and (max-width: 425px) {
+        .carousel .carousel-inner .item .btn {
+          left: 43%; } }
     .carousel .carousel-inner .item:nth-of-type(1) {
       background: #635093; }
     .carousel .carousel-inner .item:nth-of-type(2) {
       background: #47acca; }
     .carousel .carousel-inner .item:nth-of-type(3) {
       background: #62d691; }
+    @media screen and (max-width: 425px) {
+      .carousel .carousel-inner .item {
+        padding: 45% 0 0 0; } }
 
 .carousel-control {
   width: 2%; }
@@ -9774,15 +9783,16 @@ h1, h2, h3, h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 400; }
 
-h1 span {
-  color: #3ba30d;
-  border-bottom: 3px solid #3ba30d; }
-
-h1 .fa {
-  font-size: 1.5em;
-  color: #3ba30d;
-  display: block;
-  clear: both; }
+h1 {
+  line-height: 1.3em; }
+  h1 span {
+    color: #3ba30d;
+    border-bottom: 3px solid #3ba30d; }
+  h1 .fa {
+    font-size: 1.5em;
+    color: #3ba30d;
+    display: block;
+    clear: both; }
 
 h2 span {
   color: #3ba30d;
@@ -9837,7 +9847,7 @@ figure figcaption {
   z-index: 9999; }
   @media (max-width: 425px) {
     .scroll-helper {
-      top: 94%; } }
+      top: 98%; } }
 
 .scroll-helper:before {
   content: '';
@@ -9970,6 +9980,9 @@ section[role="article"] {
   .item-details div .item-details-content {
     padding: 0 15px 0 0;
     color: #ffffff; }
+    @media (max-width: 425px) {
+      .item-details div .item-details-content {
+        padding: 0 15px 0 15px; } }
   .item-details .item-details-close-btn {
     position: absolute;
     top: 0;
@@ -10054,7 +10067,10 @@ section[role="categories"] {
     padding: 15px;
     color: #ffffff; }
     .showcase-left .showcase-caption h2 {
-      margin: 0 auto auto; }
+      margin: 0 auto; }
+      @media screen and (max-width: 425px) {
+        .showcase-left .showcase-caption h2 {
+          text-align: center; } }
     @media screen and (max-width: 1024px) {
       .showcase-left .showcase-caption {
         top: 15%; } }
@@ -10091,7 +10107,10 @@ section[role="categories"] {
     padding: 15px;
     color: #ffffff; }
     .showcase-right .showcase-caption h2 {
-      margin: 0 auto auto; }
+      margin: 0 auto; }
+      @media screen and (max-width: 425px) {
+        .showcase-right .showcase-caption h2 {
+          text-align: center; } }
     @media screen and (max-width: 1024px) {
       .showcase-right .showcase-caption {
         top: 15%; } }

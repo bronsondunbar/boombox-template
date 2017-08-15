@@ -30,7 +30,13 @@
 
 		h2 {
 
-			margin: 0 auto auto;
+			margin: 0 auto;
+
+			@media screen and (max-width: $mobileLarge) {
+
+				text-align: center;
+
+			}
 
 		}
 
@@ -95,7 +101,13 @@
 
 		h2 {
 
-			margin: 0 auto auto;
+			margin: 0 auto;
+
+			@media screen and (max-width: $mobileLarge) {
+
+				text-align: center;
+
+			}
 
 		}
 

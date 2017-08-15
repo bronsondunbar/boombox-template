@@ -60,6 +60,12 @@
 
 				}
 
+				@media screen and (max-width: $mobileLarge) {
+
+					left: 43%;
+
+				}
+
 			}
 
 			&:nth-of-type(1) {
@@ -78,6 +84,10 @@
 
 				background: #62d691;
 
+			}
+
+			@media screen and (max-width: $mobileLarge) {
+				padding: 45% 0 0 0;	
 			}
 
 		}
