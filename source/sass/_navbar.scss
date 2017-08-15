@@ -39,6 +39,13 @@
 
 		}
 
+    @media screen and (max-width: $mobileLarge) {
+
+      float: left;
+      margin: 7.5px -15px 0;
+
+    }
+
 	}
 
 	.navbar-text {
@@ -65,13 +72,13 @@
 
 		}
 
-		@media screen and (min-width: $tabletPortrait) {
+		@media screen and (max-width: $tabletPortrait) {
 
 			display: block;
 
 		}
 
-    @media screen and (min-width: $mobileLarge) {
+    @media screen and (max-width: $mobileLarge) {
 
       margin: 0 0 0 15px;
 
@@ -87,9 +94,15 @@
 
 		.social-media {
 
-			padding: 0 0 0 15px;
+			padding: 0 0 0 10px;
 
 		}
+
+    @media screen and (max-width: $mobileLarge) {
+
+      display: inline-block;
+
+    }
 
 	}
 
@@ -98,6 +111,13 @@
 .navbar-right {
 
 	margin: 0 15px 0 0;
+
+  @media screen and (max-width: $mobileLarge) {
+
+    float: right !important;
+    margin: 7.5px 0 !important;
+
+  }
 
 }
 
