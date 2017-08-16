@@ -8,7 +8,6 @@
 
     <meta name="description" content="Boombox template">
     <meta name="author" content="Bronson Dunbar">
-    <meta name="robots" content="noindex, nofollow">
 
     <link rel="apple-touch-icon" sizes="57x57" href="assets/ico/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/ico/apple-icon-60x60.png">
@@ -88,14 +87,14 @@
 
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <div class="navbar-header">
-          <a href="#" class="navbar-toggle" aria-controls="navbar">
-            <i class="fa fa-2x fa-bars" aria-hidden="true"></i>
-          </a>
-
-          <a href="index.html"><img src="assets/svg/brand.svg" class="brand" /></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
+        <div id="navbar">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#" class="navbar-toggle" aria-controls="navbar">
+                <i class="fa fa-2x fa-bars" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#" class="social-media"><i class="fa fa-2x fa-facebook" aria-hidden="true"></i></a></li>
             <li><a href="#" class="social-media"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a></li>
@@ -105,6 +104,7 @@
         </div>
       </div>
     </nav>
+    <a href="index.html"><img src="assets/svg/brand.svg" class="brand" /></a>
 
     <section role="article">
       <div class="article-media"></div>
