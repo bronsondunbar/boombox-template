@@ -273,20 +273,139 @@ $(".item-detail").on("click", function (event) {
   $(".item-details-media").html("<img src='" + itemMedia + "' class='img-responsive' />");
   $(".item-details-content").html(itemContent);
 
+  $(".scroll-helper").hide();
   
 });
 
 $(".item-details-close-btn").click(function (event) {
   event.preventDefault();
 
-  $(".item-details")
-    .velocity({ left: "104vh" }, { queue: false }, 500)
-    .velocity({ top: "42vh" }, { queue: false }, 500)
-    .velocity({ opacity: 0 }, { queue: false }, 500)  
-    .velocity({ width: "1px" }, { queue: false }, 500)
-    .velocity({ height: "1px" }, { queue: false }, 500);
+  var screenResolution = $(window).width();
 
-  $("body").css("overflow-y", "visible");
+  console.log(screenResolution)
+
+  switch (screenResolution) {
+
+    case 2560:
+
+      $(".item-details > iframe").velocity({opacity: "0"}, 100);
+
+      $(".item-details")
+        .velocity({ left: "97vh" }, { queue: false }, 1000)
+        .velocity({ top: "57vh" }, { queue: false }, 1000)
+        .velocity({ opacity: 0 }, { queue: false }, 1000)  
+        .velocity({ width: "1px" }, { queue: false }, 1000)
+        .velocity({ height: "1px" }, { queue: false }, 1000);
+
+      $(".scroll-helper").show();
+
+      $("body").css("overflow-y", "visible");
+
+      break;
+
+    case 1921:
+
+      $(".item-details > iframe").velocity({opacity: "0"}, 100);
+
+      $(".item-details")
+        .velocity({ left: "104vh" }, { queue: false }, 1000)
+        .velocity({ top: "42vh" }, { queue: false }, 1000)
+        .velocity({ opacity: 0 }, { queue: false }, 1000)  
+        .velocity({ width: "1px" }, { queue: false }, 1000)
+        .velocity({ height: "1px" }, { queue: false }, 1000);
+
+      $(".scroll-helper").show();
+
+      $("body").css("overflow-y", "visible");
+
+      break;
+
+    case 1920:
+
+      $(".item-details > iframe").velocity({opacity: "0"}, 100);
+
+      $(".item-details")
+        .velocity({ left: "104vh" }, { queue: false }, 1000)
+        .velocity({ top: "42vh" }, { queue: false }, 1000)
+        .velocity({ opacity: 0 }, { queue: false }, 1000)  
+        .velocity({ width: "1px" }, { queue: false }, 1000)
+        .velocity({ height: "1px" }, { queue: false }, 1000);
+
+      $(".scroll-helper").show();
+
+      $("body").css("overflow-y", "visible");
+
+      break;
+
+    case 1440:
+
+      $(".item-details > iframe").velocity({opacity: "0"}, 100);
+
+      $(".item-details")
+        .velocity({ left: "77vh" }, { queue: false }, 1000)
+        .velocity({ top: "62vh" }, { queue: false }, 1000)
+        .velocity({ opacity: 0 }, { queue: false }, 1000)  
+        .velocity({ width: "1px" }, { queue: false }, 1000)
+        .velocity({ height: "1px" }, { queue: false }, 1000);
+
+      $(".scroll-helper").show();
+
+      $("body").css("overflow-y", "visible");
+
+      break;
+
+    case 1024:
+
+      $(".item-details > iframe").velocity({opacity: "0"}, 100);
+
+      $(".item-details")
+        .velocity({ left: "41vh" }, { queue: false }, 1000)
+        .velocity({ top: "66vh" }, { queue: false }, 1000)
+        .velocity({ opacity: 0 }, { queue: false }, 1000)  
+        .velocity({ width: "1px" }, { queue: false }, 1000)
+        .velocity({ height: "1px" }, { queue: false }, 1000);
+
+      $(".scroll-helper").show();
+
+      $("body").css("overflow-y", "visible");
+
+      break;
+
+    case 768:
+
+      $(".item-details > iframe").velocity({opacity: "0"}, 100);
+
+      $(".item-details")
+        .velocity({ left: "41vh" }, { queue: false }, 1000)
+        .velocity({ top: "66vh" }, { queue: false }, 1000)
+        .velocity({ opacity: 0 }, { queue: false }, 1000)  
+        .velocity({ width: "1px" }, { queue: false }, 1000)
+        .velocity({ height: "1px" }, { queue: false }, 1000);
+
+      $(".scroll-helper").show();
+
+      $("body").css("overflow-y", "visible");
+
+      break;
+
+    case 425:
+
+      $(".item-details > iframe").velocity({opacity: "0"}, 100);
+
+      $(".item-details")
+        .velocity({ left: "22vh" }, { queue: false }, 1000)
+        .velocity({ top: "74vh" }, { queue: false }, 1000)
+        .velocity({ opacity: 0 }, { queue: false }, 1000)  
+        .velocity({ width: "1px" }, { queue: false }, 1000)
+        .velocity({ height: "1px" }, { queue: false }, 1000);
+
+      $(".scroll-helper").show();
+
+      $("body").css("overflow-y", "visible");
+
+      break;
+
+  }
 });
 
 /* Add FontAwesome animation classes to icons on hover */
