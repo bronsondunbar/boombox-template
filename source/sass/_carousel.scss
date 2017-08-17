@@ -28,7 +28,7 @@
 
 				@media screen and (max-width: $tabletPortrait) {
 
-					width: 96%;
+					width: 100%;
 
 				}
 
@@ -56,12 +56,14 @@
 
 				@media screen and (max-width: $tabletPortrait) {
 
+					top: 83%;
 					left: 46%;
 
 				}
 
 				@media screen and (max-width: $mobileLarge) {
 
+					top: 80%;
 					left: 43%;
 
 				}
@@ -86,8 +88,22 @@
 
 			}
 
+			@media screen and (max-width: $tabletLandscape) {
+
+				padding: 17% 0 0 0;	
+
+			}
+
+			@media screen and (max-width: $tabletPortrait) {
+
+				padding: 40% 0 0 0;
+
+			}
+
 			@media screen and (max-width: $mobileLarge) {
-				padding: 45% 0 0 0;	
+
+				padding: 74% 0 0 0;	
+
 			}
 
 		}

@@ -21,6 +21,12 @@
 	border-radius: 25px;
 	z-index: 9999;
 
+	@media (max-width: $tabletPortrait) {
+
+		top: 97%;
+
+	}
+
 	@media (max-width: $mobileLarge) {
 
 		top: 98%;
