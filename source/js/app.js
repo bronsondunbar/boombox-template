@@ -388,6 +388,23 @@ $(".item-details-close-btn").click(function (event) {
 
       break;
 
+    case 736:
+
+      $(".item-details > iframe").velocity({opacity: "0"}, 100);
+
+      $(".item-details")
+        .velocity({ left: "41vh" }, { queue: false }, 1000)
+        .velocity({ top: "66vh" }, { queue: false }, 1000)
+        .velocity({ opacity: 0 }, { queue: false }, 1000)  
+        .velocity({ width: "1px" }, { queue: false }, 1000)
+        .velocity({ height: "1px" }, { queue: false }, 1000);
+
+      $(".scroll-helper").show();
+
+      $("body").css("overflow-y", "visible");
+
+      break;
+
     case 425:
 
       $(".item-details > iframe").velocity({opacity: "0"}, 100);

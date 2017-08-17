@@ -9466,6 +9466,12 @@ button.close {
       @media screen and (max-width: 768px) {
         .carousel .carousel-inner .item img {
           width: 100%; } }
+      @media screen and (max-width: 736px) {
+        .carousel .carousel-inner .item img {
+          width: 50%; } }
+      @media screen and (max-width: 425px) {
+        .carousel .carousel-inner .item img {
+          width: 100%; } }
     .carousel .carousel-inner .item .btn {
       position: absolute;
       top: 84%;
@@ -9480,11 +9486,15 @@ button.close {
           left: 47%; } }
       @media screen and (max-width: 768px) {
         .carousel .carousel-inner .item .btn {
-          top: 83%;
+          top: 79%;
+          left: 46%; } }
+      @media screen and (max-width: 736px) {
+        .carousel .carousel-inner .item .btn {
+          top: 69%;
           left: 46%; } }
       @media screen and (max-width: 425px) {
         .carousel .carousel-inner .item .btn {
-          top: 80%;
+          top: 73%;
           left: 43%; } }
     .carousel .carousel-inner .item:nth-of-type(1) {
       background: #635093; }
@@ -9497,10 +9507,13 @@ button.close {
         padding: 17% 0 0 0; } }
     @media screen and (max-width: 768px) {
       .carousel .carousel-inner .item {
-        padding: 40% 0 0 0; } }
+        padding: 12% 0 0 0; } }
+    @media screen and (max-width: 736px) {
+      .carousel .carousel-inner .item {
+        padding: 15% 0 0 0; } }
     @media screen and (max-width: 425px) {
       .carousel .carousel-inner .item {
-        padding: 74% 0 0 0; } }
+        padding: 50% 0 0 0; } }
 
 .carousel-control {
   width: 2%; }
@@ -9548,6 +9561,12 @@ button.close {
   @media screen and (max-width: 1440px) {
     .carousel-indicators {
       bottom: 7%; } }
+  @media screen and (max-width: 768px) {
+    .carousel-indicators {
+      bottom: 7.5%; } }
+  @media screen and (max-width: 736px) {
+    .carousel-indicators {
+      bottom: 10%; } }
 
 /* Navbar */
 #navbar {
@@ -9566,6 +9585,10 @@ button.close {
     transition: all 0.3s; }
     .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
       color: #3ba30d; }
+  @media screen and (max-width: 736px) {
+    .navbar-default .navbar-nav {
+      float: left;
+      margin: 7.5px -15px 0; } }
   @media screen and (max-width: 425px) {
     .navbar-default .navbar-nav {
       float: left;
@@ -9587,6 +9610,9 @@ button.close {
     @media screen and (max-width: 768px) {
       .navbar-default .navbar-toggle {
         display: block; } }
+    @media screen and (max-width: 736px) {
+      .navbar-default .navbar-toggle {
+        margin: 0 0 0 15px; } }
     @media screen and (max-width: 425px) {
       .navbar-default .navbar-toggle {
         margin: 0 0 0 15px; } }
@@ -9594,12 +9620,20 @@ button.close {
 .nav li .social-media {
   padding: 0 0 0 10px; }
 
+@media screen and (max-width: 736px) {
+  .nav li {
+    display: inline-block; } }
+
 @media screen and (max-width: 425px) {
   .nav li {
     display: inline-block; } }
 
 .navbar-right {
   margin: 0 15px 0 0; }
+  @media screen and (max-width: 736px) {
+    .navbar-right {
+      float: right !important;
+      margin: 7.5px 0 !important; } }
   @media screen and (max-width: 425px) {
     .navbar-right {
       float: right !important;
@@ -10081,7 +10115,13 @@ section[role="categories"] {
     padding: 15px;
     color: #ffffff; }
     .showcase-left .showcase-caption h2 {
-      margin: 0 auto; }
+      margin: 0 auto 15px; }
+      @media screen and (max-width: 768px) {
+        .showcase-left .showcase-caption h2 {
+          text-align: center; } }
+      @media screen and (max-width: 736px) {
+        .showcase-left .showcase-caption h2 {
+          text-align: center; } }
       @media screen and (max-width: 425px) {
         .showcase-left .showcase-caption h2 {
           text-align: center; } }
@@ -10121,7 +10161,13 @@ section[role="categories"] {
     padding: 15px;
     color: #ffffff; }
     .showcase-right .showcase-caption h2 {
-      margin: 0 auto; }
+      margin: 0 auto 15px; }
+      @media screen and (max-width: 768px) {
+        .showcase-right .showcase-caption h2 {
+          text-align: center; } }
+      @media screen and (max-width: 736px) {
+        .showcase-right .showcase-caption h2 {
+          text-align: center; } }
       @media screen and (max-width: 425px) {
         .showcase-right .showcase-caption h2 {
           text-align: center; } }
@@ -10507,6 +10553,11 @@ form div iframe {
     .brand {
       width: 7%;
       left: 46%; } }
+  @media screen and (max-width: 736px) {
+    .brand {
+      width: 7%;
+      top: 4%;
+      left: 47%; } }
   @media screen and (max-width: 425px) {
     .brand {
       width: 11%;

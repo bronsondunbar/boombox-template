@@ -20,7 +20,7 @@ section[role="article"] {
 		right: 0;
 		border-bottom: 5px solid $green;
 
-		@media screen and (max-width: $mobileLarge) {
+		@media screen and (max-width: $mobileLargePortrait) {
 
 			display: none;
 
@@ -52,7 +52,7 @@ section[role="article"] {
 							font-size: 5em;
 							margin: 30px 0;
 
-							@media screen and (max-width: $mobileLarge) {
+							@media screen and (max-width: $mobileLargePortrait) {
 
 								font-size: 4em;
 
@@ -110,7 +110,7 @@ section[role="article"] {
 
 						}
 
-						@media screen and (max-width: $mobileLarge) {
+						@media screen and (max-width: $mobileLargePortrait) {
 
 							width: 100%;
 
@@ -138,7 +138,7 @@ section[role="article"] {
 							max-width: 10%;
 							border-radius: 50%;
 
-							@media screen and (max-width: $mobileLarge) {
+							@media screen and (max-width: $mobileLargePortrait) {
 
 								max-width: 50%;
 
@@ -156,7 +156,7 @@ section[role="article"] {
 
 	}
 
-	@media screen and (max-width: $mobileLarge) {
+	@media screen and (max-width: $mobileLargePortrait) {
 
 		padding: 10% 0 0 0;
 

@@ -39,7 +39,14 @@
 
 		}
 
-    @media screen and (max-width: $mobileLarge) {
+    @media screen and (max-width: $mobileLargeLandscape) {
+
+      float: left;
+      margin: 7.5px -15px 0;
+
+    }
+
+    @media screen and (max-width: $mobileLargePortrait) {
 
       float: left;
       margin: 7.5px -15px 0;
@@ -78,7 +85,13 @@
 
 		}
 
-    @media screen and (max-width: $mobileLarge) {
+    @media screen and (max-width: $mobileLargeLandscape) {
+
+      margin: 0 0 0 15px;
+
+    }
+
+    @media screen and (max-width: $mobileLargePortrait) {
 
       margin: 0 0 0 15px;
 
@@ -98,7 +111,13 @@
 
 		}
 
-    @media screen and (max-width: $mobileLarge) {
+    @media screen and (max-width: $mobileLargeLandscape) {
+
+      display: inline-block;
+
+    }
+
+    @media screen and (max-width: $mobileLargePortrait) {
 
       display: inline-block;
 
@@ -112,7 +131,14 @@
 
 	margin: 0 15px 0 0;
 
-  @media screen and (max-width: $mobileLarge) {
+  @media screen and (max-width: $mobileLargeLandscape) {
+
+    float: right !important;
+    margin: 7.5px 0 !important;
+
+  }
+
+  @media screen and (max-width: $mobileLargePortrait) {
 
     float: right !important;
     margin: 7.5px 0 !important;

@@ -30,9 +30,21 @@
 
 		h2 {
 
-			margin: 0 auto;
+			margin: 0 auto 15px;
 
-			@media screen and (max-width: $mobileLarge) {
+			@media screen and (max-width: $tabletPortrait) {
+
+				text-align: center;
+
+			}
+
+			@media screen and (max-width: $mobileLargeLandscape) {
+
+				text-align: center;
+
+			}
+
+			@media screen and (max-width: $mobileLargePortrait) {
 
 				text-align: center;
 
@@ -101,9 +113,21 @@
 
 		h2 {
 
-			margin: 0 auto;
+			margin: 0 auto 15px;
 
-			@media screen and (max-width: $mobileLarge) {
+			@media screen and (max-width: $tabletPortrait) {
+
+				text-align: center;
+
+			}
+
+			@media screen and (max-width: $mobileLargeLandscape) {
+
+				text-align: center;
+
+			}
+
+			@media screen and (max-width: $mobileLargePortrait) {
 
 				text-align: center;
 

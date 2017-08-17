@@ -92,7 +92,7 @@
 
 		}
 
-		@media screen and (max-width: $mobileLarge) {
+		@media screen and (max-width: $mobileLargePortrait) {
 
 	    	grid-column: span 3;
 
@@ -182,7 +182,7 @@
 
 		}
 
-		@media screen and (max-width: $mobileLarge) {
+		@media screen and (max-width: $mobileLargePortrait) {
 
 	    	grid-column: span 3;
 
@@ -303,7 +303,7 @@
 
 			}
 
-			@media screen and (max-width: $mobileLarge) {
+			@media screen and (max-width: $mobileLargePortrait) {
 
 		    	height: 100%;
 
@@ -311,7 +311,7 @@
 
 		}
 
-		@media screen and (max-width: $mobileLarge) {
+		@media screen and (max-width: $mobileLargePortrait) {
 
 	    	grid-column: span 3;
 
@@ -320,7 +320,7 @@
 	}
 
 
-	@media screen and (max-width: $mobileLarge) {
+	@media screen and (max-width: $mobileLargePortrait) {
 
     	grid-template-rows: 1fr 1fr 1fr 1fr;
     	grid-auto-rows: minmax(auto, auto);

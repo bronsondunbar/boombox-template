@@ -54,7 +54,7 @@
 
 			}
 
-			@media (max-width: $mobileLarge) {
+			@media (max-width: $mobileLargePortrait) {
 
 				padding: 0 15px 0 15px;
 
@@ -105,7 +105,7 @@
 
 	}
 
-	@media (max-width: $mobileLarge) {
+	@media (max-width: $mobileLargePortrait) {
 
 		left: 22vh;
 		top: 74vh;

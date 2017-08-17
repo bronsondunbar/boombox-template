@@ -32,6 +32,18 @@
 
 				}
 
+				@media screen and (max-width: $mobileLargeLandscape) {
+
+					width: 50%;
+
+				}
+
+				@media screen and (max-width: $mobileLargePortrait) {
+
+					width: 100%;
+
+				}
+
 			}
 
 			.btn {
@@ -56,14 +68,21 @@
 
 				@media screen and (max-width: $tabletPortrait) {
 
-					top: 83%;
+					top: 79%;
 					left: 46%;
 
 				}
 
-				@media screen and (max-width: $mobileLarge) {
+				@media screen and (max-width: $mobileLargeLandscape) {
 
-					top: 80%;
+					top: 69%;
+					left: 46%;
+
+				}
+
+				@media screen and (max-width: $mobileLargePortrait) {
+
+					top: 73%;
 					left: 43%;
 
 				}
@@ -96,13 +115,19 @@
 
 			@media screen and (max-width: $tabletPortrait) {
 
-				padding: 40% 0 0 0;
+				padding: 12% 0 0 0;
 
 			}
 
-			@media screen and (max-width: $mobileLarge) {
+			@media screen and (max-width: $mobileLargeLandscape) {
 
-				padding: 74% 0 0 0;	
+				padding: 15% 0 0 0;	
+
+			}
+
+			@media screen and (max-width: $mobileLargePortrait) {
+
+				padding: 50% 0 0 0;	
 
 			}
 
@@ -206,6 +231,18 @@
 	@media screen and (max-width: $laptop) {
 
 		bottom: 7%;
+
+	}
+
+	@media screen and (max-width: $tabletPortrait) {
+		
+		bottom: 7.5%;
+
+	}
+
+	@media screen and (max-width: $mobileLargeLandscape) {
+		
+		bottom: 10%;
 
 	}
 
