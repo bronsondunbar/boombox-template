@@ -23,7 +23,13 @@
 
 	@media (max-width: $tabletPortrait) {
 
-		top: 97%;
+		top: 95%;
+
+	}
+
+	@media (max-width: $tabletLandscape) {
+
+		top: 95%;
 
 	}
 
