@@ -224,7 +224,7 @@ input[type="radio"] {
 		top: -18px;
 		left: -1px;
 		font-size: 40px;
-		color: $lightBlue;
+		color: $green;
 		border-radius: 28px;
 		transition: $fastTransition;
 
@@ -232,7 +232,7 @@ input[type="radio"] {
 
 	&:checked + span {
 
-		color: $lightBlue;
+		color: $green;
 
 	}
 
@@ -245,7 +245,7 @@ input[type="radio"] {
 		top: -18px;
 		left: -1px;
 		font-size: 40px;
-		color: $lightBlue;
+		color: $green;
 		border-radius: 28px;
 		transition: $fastTransition;
 
