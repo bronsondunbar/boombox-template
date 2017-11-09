@@ -6,6 +6,8 @@ Template can be setup using CodeKit
 
 https://codekitapp.com/
 
+## License
+
 MIT License
 
 Copyright (c) 2017 Bronson Dunbar www.bronsondunbar.com
