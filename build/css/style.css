@@ -10157,13 +10157,14 @@ section {
     text-align: center; }
 
 section[role="highlight"] {
+  background: #333333;
   margin: 15px 0;
   padding: 15px 0 0 0;
   color: #ffffff;
   overflow: hidden; }
   section[role="highlight"] h1 {
     text-align: center;
-    color: #333333;
+    color: #ffffff;
     margin: 15px 0 30px; }
 
 section[role="categories"] {
