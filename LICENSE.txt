@@ -1,13 +1,3 @@
-# Boombox template
-
-HTML5, CSS and JQuery template
-
-Template can be setup using CodeKit
-
-https://codekitapp.com/
-
-## License
-
 MIT License
 
 Copyright (c) 2017 Bronson Dunbar www.bronsondunbar.com
@@ -29,11 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-Preview https://bronsondunbar.github.io/boombox-template/
-
-<img src="https://github.com/bronsondunbar/boombox-template/blob/master/screenshot.png"/>
-
-<img src="https://github.com/bronsondunbar/boombox-template/blob/master/screenshot-2.png"/>
-
-<img src="https://github.com/bronsondunbar/boombox-template/blob/master/screenshot-3.png"/>
