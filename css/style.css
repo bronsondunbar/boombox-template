@@ -1,10 +1,11 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Anton");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -243,7 +244,7 @@ th {
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url("../fonts/glyphicons-halflings-regular.eot");
-  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"); }
 
 .glyphicon {
   position: relative;
@@ -6394,7 +6395,7 @@ button.close {
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -9891,8 +9892,9 @@ button.close {
 
 /* Typography */
 h1, h2, h3, h4 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400; }
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px; }
 
 h1 {
   line-height: 1.3em; }
@@ -10156,13 +10158,14 @@ section {
     text-align: center; }
 
 section[role="highlight"] {
+  background: #333333;
   margin: 15px 0;
   padding: 15px 0 0 0;
   color: #ffffff;
   overflow: hidden; }
   section[role="highlight"] h1 {
     text-align: center;
-    color: #333333;
+    color: #ffffff;
     margin: 15px 0 30px; }
 
 section[role="categories"] {
@@ -10596,6 +10599,91 @@ form div img {
 
 form div iframe {
   margin: 15px 0; }
+
+input[type="radio"] + span {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+input[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px; }
+
+input[type="radio"]:checked {
+  position: absolute;
+  left: -9999px; }
+
+input[type="radio"]:not(:checked) + span {
+  position: relative;
+  padding-top: 5px;
+  padding-left: 25px;
+  cursor: pointer; }
+
+input[type="radio"]:checked + span {
+  position: relative;
+  padding-top: 5px;
+  padding-left: 25px;
+  cursor: pointer; }
+
+input[type="radio"]:not(:checked) + span:before {
+  content: '○';
+  position: absolute;
+  left: -4px;
+  top: -18px;
+  font-size: 40px;
+  color: #e5e5e5;
+  width: 28px;
+  height: 28px;
+  border-radius: 28px; }
+
+input[type="radio"]:checked + span:before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: -18px;
+  font-size: 40px;
+  color: #e5e5e5;
+  width: 28px;
+  height: 28px;
+  border-radius: 28px; }
+
+input[type="radio"]:not(:checked) + span:after {
+  content: '●';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: -18px;
+  left: -1px;
+  font-size: 40px;
+  color: #3ba30d;
+  border-radius: 28px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+input[type="radio"]:checked + span {
+  color: #3ba30d; }
+
+input[type="radio"]:checked + span:after {
+  content: '●';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: -18px;
+  left: -1px;
+  font-size: 40px;
+  color: #3ba30d;
+  border-radius: 28px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+input[type="radio"]:not(:checked) + span:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0); }
+
+input[type="radio"]:checked + span:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1); }
 
 .footer {
   position: static;
