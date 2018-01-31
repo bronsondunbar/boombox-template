@@ -6,6 +6,8 @@ Template can be setup using CodeKit
 
 https://codekitapp.com/
 
+Preview https://bronsondunbar.github.io/boombox-template/
+
 ## License
 
 MIT License
@@ -29,8 +31,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-Preview https://bronsondunbar.github.io/boombox-template/
 
 <img src="https://github.com/bronsondunbar/boombox-template/blob/master/screenshot.png"/>
 
