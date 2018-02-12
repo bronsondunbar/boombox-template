@@ -27,10 +27,10 @@ section {
 
 section[role="highlight"] {
 
-	background: $gray;
+	background: $lightGray;
 	margin: 15px 0;
 	padding: 15px 0 0 0;
-	color: $white;
+	color: $gray;
 	overflow: hidden;
 
 	&:before {
@@ -41,7 +41,7 @@ section[role="highlight"] {
 	h1 {
 
 		text-align: center;
-		color: $white;
+		color: $gray;
 		margin: 15px 0 30px;
 
 	}
