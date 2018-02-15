@@ -15,12 +15,5 @@
 // @codekit-prepend 'templateLightbox.js'
 // @codekit-prepend 'templateFontAwesomeAnimations.js'
 
-$(document).ready(function () {
-
-  /* Display tooltips for template purposes */
-
-  $('a[data-toggle="tooltip"]').tooltip("show");
-
-});
 
 
