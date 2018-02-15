@@ -9749,7 +9749,7 @@ button.close {
         margin: 0;
         padding: 0;
         background: #ffffff;
-        border-right: 1px solid #e5e5e5;
+        border-right: 1px solid #dddddd;
         -webkit-box-shadow: inset -12px 0px 23px -14px rgba(0, 0, 0, 0.31);
                 box-shadow: inset -12px 0px 23px -14px rgba(0, 0, 0, 0.31);
         /* Level 2 */ }
@@ -9762,7 +9762,7 @@ button.close {
           margin: 0;
           padding: 0;
           background: #3ba30d;
-          border-right: 1px solid #e5e5e5;
+          border-right: 1px solid #dddddd;
           -webkit-box-shadow: inset -12px 0px 23px -14px rgba(0, 0, 0, 0.31);
                   box-shadow: inset -12px 0px 23px -14px rgba(0, 0, 0, 0.31);
           /* Level 3 */ }
@@ -9774,7 +9774,7 @@ button.close {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            background: #e5e5e5;
+            background: #dddddd;
             border-right: 1px solid #ffffff;
             -webkit-box-shadow: inset -12px 0px 23px -14px rgba(0, 0, 0, 0.31);
                     box-shadow: inset -12px 0px 23px -14px rgba(0, 0, 0, 0.31); }
@@ -9793,7 +9793,7 @@ button.close {
               .navbar-content div div div ul ul ul ul li:last-child {
                 border: none; }
           .navbar-content div div div ul ul ul li {
-            border-bottom: 1px solid #e5e5e5; }
+            border-bottom: 1px solid #dddddd; }
             .navbar-content div div div ul ul ul li a {
               display: block;
               padding: 15px 15px 15px 40px;
@@ -9807,7 +9807,7 @@ button.close {
             .navbar-content div div div ul ul ul li:last-child {
               border: none; }
         .navbar-content div div div ul ul li {
-          border-bottom: 1px solid #e5e5e5; }
+          border-bottom: 1px solid #dddddd; }
           .navbar-content div div div ul ul li a {
             display: block;
             padding: 15px 15px 15px 40px;
@@ -10035,7 +10035,7 @@ section[role="article"] {
             section[role="article"] .article-content .container .row div header h1 {
               font-size: 4em; } }
         section[role="article"] .article-content .container .row div header ul {
-          background: #e5e5e5;
+          background: #dddddd;
           list-style-type: none;
           margin: 15px 0;
           padding: 15px 0;
@@ -10062,7 +10062,7 @@ section[role="article"] {
         text-align: center;
         padding: 30px 0;
         margin: 30px 0;
-        border-top: 1px solid #e5e5e5; }
+        border-top: 1px solid #dddddd; }
         section[role="article"] .article-content .container .row div .author h2 {
           color: #3ba30d; }
         section[role="article"] .article-content .container .row div .author img {
@@ -10158,14 +10158,14 @@ section {
     text-align: center; }
 
 section[role="highlight"] {
-  background: #333333;
+  background: #dddddd;
   margin: 15px 0;
   padding: 15px 0 0 0;
-  color: #ffffff;
+  color: #333333;
   overflow: hidden; }
   section[role="highlight"] h1 {
     text-align: center;
-    color: #ffffff;
+    color: #333333;
     margin: 15px 0 30px; }
 
 section[role="categories"] {
@@ -10297,7 +10297,7 @@ section[role="categories"] {
     margin: 0;
     overflow: hidden;
     cursor: pointer;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #dddddd;
     -webkit-transition: all 0.3s;
     transition: all 0.3s; }
     .grid .feature:first-child {
@@ -10369,7 +10369,7 @@ section[role="categories"] {
     cursor: pointer;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    border: 1px solid #e5e5e5; }
+    border: 1px solid #dddddd; }
     .grid .article:first-child {
       grid-column: span 3; }
     .grid .article:last-child {
@@ -10458,7 +10458,7 @@ section[role="categories"] {
       cursor: pointer;
       -webkit-transition: all 0.3s;
       transition: all 0.3s;
-      border: 1px solid #e5e5e5; }
+      border: 1px solid #dddddd; }
       .grid .both .item:first-child {
         margin: 0 0 15px 0; }
       .grid .both .item:hover, .grid .both .item:focus {
@@ -10543,13 +10543,13 @@ a {
 form {
   text-align: center;
   padding: 0 0 15px 0;
-  border-bottom: 2px dashed #e5e5e5; }
+  border-bottom: 2px dashed #dddddd; }
   form .btn {
     padding: 6px 30px; }
 
 input, textarea {
   background: none;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #dddddd;
   padding: 5px;
   width: 100%; }
   input:focus, textarea:focus {
@@ -10630,7 +10630,7 @@ input[type="radio"]:not(:checked) + span:before {
   left: -4px;
   top: -18px;
   font-size: 40px;
-  color: #e5e5e5;
+  color: #dddddd;
   width: 28px;
   height: 28px;
   border-radius: 28px; }
@@ -10641,7 +10641,7 @@ input[type="radio"]:checked + span:before {
   left: -4px;
   top: -18px;
   font-size: 40px;
-  color: #e5e5e5;
+  color: #dddddd;
   width: 28px;
   height: 28px;
   border-radius: 28px; }
