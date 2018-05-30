@@ -10,7 +10,7 @@ Preview https://bronsondunbar.github.io/boombox-template/
 
 <a href="https://www.becomeawppro.com/boombox-wp-19-97/">WordPress theme</a>
 
-<a href="https://github.com/bronsondunbar/boombox-template-react-redux">React template</a>
+<a href="https://github.com/bronsondunbar/boombox-template-react">React template</a>
 
 ## License
 
