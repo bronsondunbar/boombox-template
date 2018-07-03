@@ -1,6 +1,6 @@
 # Boombox template
 
-HTML5, CSS and JQuery template
+HTML5, CSS and JQuery website template.
 
 Template can be setup using CodeKit
 
