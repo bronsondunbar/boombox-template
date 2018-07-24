@@ -1,331 +1,109 @@
 
-/* Grid layout */
+/* Grid */
 
 .grid {
 
-	display: grid;
-	grid-gap: 15px;
-	margin: 15px 0;
-	padding: 30px;
-	background: rgba($white, 0.8);
-	grid-template-columns: 1fr 2fr 1fr;
-	grid-auto-rows: minmax(250px, auto);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px -15px;
 
-	.feature {
+  h1, h2, h3, h4 {
 
-		display: flex;
-		position: relative;
-		justify-content: center;
-		align-items: flex-end;
-		flex-wrap: wrap;
-		margin: 0;
-		overflow: hidden;
-		cursor: pointer;
-		border: 1px solid $lightGray;
-		transition: all 0.3s;
+    width: 100%;
 
-		&:first-child {
+  }
 
-			grid-column: span 3;
+  .item {
 
-		}
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 150px;
+    min-width: 25%;
+    margin: 15px;
+    padding: 15px;
+    transition: all 0.3s;
 
-		&:last-child {
+    h1, h2, h3, h4 {
 
-			grid-column: span 3;
+      text-align: center;
+      font-weight: 400;
+      width: 100%;
 
-		}
+    }
 
-		&:hover, &:focus {
+    form, p, a, ul {
 
-			box-shadow: 0px 0px 10px 1px rgba($green, 0.7);
+      width: 100%;
 
-		}
+    }
 
-		.caption {
+    a {
 
-			display: flex;
-			justify-content: center;
-			align-items: stretch;
-			background: $green;
-			width: 100%;
-			color: $white;
-			padding: 15px;
-			flex-direction: column;
-			flex: 1;
+      position: relative;
+      right: 0;
 
-			a {
+    }
 
-				color: $white;
+    li {
 
+      list-style-type: none;
 
-				h1, h2, h3 {
+    }
 
-					margin: 0;
-					text-align: center;
+    i {
 
-				}
+      text-align: center;
+      width: 100%;
+      margin: 0 0 10px;
 
-				.fa {
+    }
 
-					width: 100%;
-					text-align: center;
-					margin: 15px 0;
+    img {
 
-				}
+      margin: 0;
 
+    }
 
-			}
+    .btn {
 
-		}
+      width: auto;
+      text-decoration: none;
 
-		img {
+    }
 
-			max-width: 100%;
-			transition: all 0.3s;
+    @media (max-width: $tabletPortrait) {
 
-			&:hover, &:focus {
+        min-width: 90%;
 
-				filter: grayscale(100%);
+    }
 
-			}
+    @media (max-width: $mobileLargeLandscape) {
 
-		}
+        min-width: 90%;
 
-		@media screen and (max-width: $mobileLargePortrait) {
+    }
 
-	    	grid-column: span 3;
+    @media (max-width: $mobileLargePortrait) {
 
-	  	}
+        min-width: 90%;
 
-	}
+    }
 
-	.feature-flex-start {
+  }
 
-		align-items: flex-start;
+  @media (max-width: $tabletPortrait) {
 
-	}
+    min-width: 50%;
 
-	.article {
+  }
 
-		background: $white;
-		display: flex;
-		justify-content: center;
-		align-items: flex-start;
-		flex-wrap: wrap;
-		color: $gray;
-		overflow: hidden;
-		cursor: pointer;
-		transition: all 0.3s;
-		border: 1px solid $lightGray;
+  @media (max-width: $mobileLargePortrait) {
 
-		&:first-child {
+    min-width: 100%;
 
-			grid-column: span 3;
-
-		}
-
-		&:last-child {
-
-			grid-column: span 3;
-
-		}
-
-		&:hover, &:focus {
-
-			box-shadow: 0px 0px 10px 1px rgba($green, 0.7);
-
-		}
-
-		.caption {
-
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-wrap: wrap;
-			width: 100%;
-			padding: 10px;
-
-			a {
-
-				color: $gray;
-
-				h1, h2, h3 {
-
-					margin: 0;
-					text-align: center;
-
-				}
-
-				.fa {
-
-					width: 100%;
-					text-align: center;
-					margin: 15px 0;
-
-				}
-
-			}
-
-		}
-
-		img {
-
-			max-width: 100%;
-			transition: all 0.3s;
-
-			&:hover, &:focus {
-
-				filter: grayscale(100%);
-
-			}
-
-		}
-
-		@media screen and (max-width: $mobileLargePortrait) {
-
-	    	grid-column: span 3;
-
-	  	}
-
-
-	}
-
-	.article-flex-start {
-
-		align-items: flex-start;
-
-	}
-
-	.article-flex-end {
-
-		align-items: flex-end;
-
-	}
-
-	.article-flex-center {
-
-		align-items: center;
-
-	}
-
-	.both {
-
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		color: $white;
-
-		&:first-child {
-
-			grid-column: span 3;
-
-		}
-
-		&:last-child {
-
-			grid-column: span 3;
-
-		}
-
-		.item {
-
-			background: $green;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-wrap: wrap;
-			height: 48%;
-			width: 100%;
-			overflow: hidden;
-			cursor: pointer;
-			transition: all 0.3s;
-			border: 1px solid $lightGray;
-
-			&:first-child {
-
-				margin: 0 0 15px 0;
-
-			}
-
-			&:hover, &:focus {
-
-				box-shadow: 0px 0px 10px 1px rgba($green, 0.7);
-
-			}
-
-			.caption {
-
-				width: 100%;
-				padding: 10px;
-				display: flex;
-				justify-content: center;
-				align-items: stretch;
-				flex-wrap: wrap;
-				flex-direction: column;
-				flex: 1;
-
-				a {
-
-					color: $white;
-
-					h1, h2, h3 {
-
-						margin: 0;
-						text-align: center;
-
-					}
-
-					.fa {
-
-						width: 100%;
-						text-align: center;
-						margin: 15px 0;
-						color: $white;
-
-					}
-
-				}
-
-			}
-
-			img {
-
-				max-width: 100%;
-				transition: all 0.3s;
-
-				&:hover, &:focus {
-
-					filter: grayscale(100%);
-
-				}
-
-			}
-
-			@media screen and (max-width: $mobileLargePortrait) {
-
-		    	height: 100%;
-
-		  	}
-
-		}
-
-		@media screen and (max-width: $mobileLargePortrait) {
-
-	    	grid-column: span 3;
-
-	  	}
-
-	}
-
-
-	@media screen and (max-width: $mobileLargePortrait) {
-
-    	grid-template-rows: 1fr 1fr 1fr 1fr;
-    	grid-auto-rows: minmax(auto, auto);
-    	padding: 0;
-
-  	}
+  }
 
 }
